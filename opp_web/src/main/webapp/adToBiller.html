@@ -1,0 +1,30 @@
+<script src="resources/js/libs/jquery-1.8.3.min.js"></script>
+<script>
+	$( document ).ready(function() {
+		var location = window.location.href;
+		var billerCorpId = '';
+		var resourceAppId = '';
+		var index =  location.lastIndexOf('/');
+		var baseURL = location.slice(0, index);
+		var queryStringURL = window.location.search.substring(1);
+		var splittedValues = queryStringURL.split('&');
+		var targetedUrl = "/main_payment_page.jsp?resourceAppId=";
+		var homePageUrl = "/home.jsp?resourceAppId=";
+		var billerCorpParam = "&billerCorpId=";
+		for ( var i = 0; i < splittedValues.length; i++) {
+			var paramValue = splittedValues[i].split('=');
+			if (paramValue[0] == "billerCorpId") {
+				billerCorpId = paramValue[1];
+			}
+			if (paramValue[0] == "resourceAppId") {
+				resourceAppId = paramValue[1];
+			}
+		}
+
+		if (billerCorpId) {
+			window.location.href = baseURL + targetedUrl + resourceAppId + billerCorpParam + billerCorpId + '#addBiller';
+		} else {
+			window.location.href = baseURL + homePageUrl + resourceAppId;
+		} 
+	});
+</script>

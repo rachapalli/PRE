@@ -1,0 +1,37 @@
+<!--start commonPreHeader.jspf -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+<c:set var="resourceAppId" value="${requestScope.resourceAppId}" scope="request"/>
+<c:set var="reqLocale" value="${param.lang}" scope="request"/>
+<c:set var="loc" value="en_US" scope="request"/>
+<c:choose>
+    <c:when test="${!empty reqLocale}">
+        <c:set var="loc" value="${reqLocale}" scope="request"/>
+        <c:if test="${!fn:contains(loc, '_')}">
+            <c:set var="loc" value="${loc}_US" scope="request"/>
+        </c:if>
+    </c:when>
+    <c:otherwise>
+        <c:set var="loc" value="${cookie['locale'].value}" scope="request"/>
+        <c:if test="${empty loc}">
+            <c:set var="loc" value="en_US" scope="request"/>
+        </c:if>
+    </c:otherwise>
+</c:choose>
+<%
+
+
+    String pageLocale = request.getAttribute("loc").toString();
+    Cookie pageCookie=new Cookie("locale", pageLocale);
+    pageCookie.setMaxAge(365*24*60*60);
+    response.addCookie(pageCookie);
+%>
+<c:if test="${!empty resourceAppId}">
+    <c:set var="loc" value="${loc}_${resourceAppId}" scope="request" />
+</c:if>
+<fmt:setLocale value="${loc}"/>
+<fmt:setBundle basename="opp"/>
+
+<!--end commonPreHeader.jspf -->

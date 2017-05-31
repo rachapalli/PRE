@@ -1,0 +1,8 @@
+#Wed Feb 18 15:02:16 IST 2015
+activeProfiles=opp_web
+eclipse.preferences.version=1
+fullBuildGoals=process-test-resources
+resolveWorkspaceProjects=true
+resourceFilterGoals=process-resources resources\:testResources
+skipCompilerPlugin=true
+version=1

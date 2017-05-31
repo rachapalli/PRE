@@ -1,0 +1,59 @@
+/* override.css */
+
+/* background color - these should all be the same value */
+body { background: white;}
+.container { background: white; }
+.head-sec { background: white; }
+.head-sec-login { background: white; }
+.header_login { background: white; }
+.body_bg {
+	background: none repeat-x scroll 0 0 #ffffff;
+}
+
+ul.guest_user_area li {
+    border-left:solid 1px #a9a8a9;
+    color: #a9a8a9;
+}
+
+.create_account_container { 
+	margin: 1em 0;
+}
+
+.col_id {
+    color: #05a618;    
+}
+
+/* logo - change file path and width/height as necessary */
+.logo_icon, .logo_icon_login { background: url("../../images/12/logo.png") no-repeat 100% 100% transparent; height: 70px; width: 268px; margin: 0; }
+
+/* login language selector color and icon (default is white - for bg color changes, change to grey/black if background is white) */
+/* change file path for images */
+.picker .toggle { color: #a9a8a9; }
+.drop_img_icon { background: url("../../images/12/down_arrow-dark.png") no-repeat scroll 0 0 transparent; }
+.up_img_icon { background: url("../../images/12/up_arrow-dark.png") no-repeat scroll 0 0 transparent; }
+
+/* header bar color */
+.login_bg_heading, .find_bill_bg, .add_money_mainbg, .acc_bg_heading, .sel_paybg_heading, .latestpay_bg_heading { background: #00b188; }
+
+/* header text color - default is white */
+h1 { }
+h6 { color: #00b188; } /* default blue #094e89 */
+
+/* general links (desktop footer) */
+a:link { color: #00b188; }
+a:visited { color: #00b188; }
+a:hover { color: #a9a8a9; }
+
+/* upper nav links (desktop) and border between links (these should be the same color) */
+nav a:link, nav a:visited { color: #a9a8a9; }
+.nav_lnk { border-left: 1px solid #a9a8a9; }
+.nav_lnk1 { color: #a9a8a9; } 
+
+/* changes for logo size/header area elements on mobile screen */
+@media only screen and (max-width:799px) {
+
+.logo_icon, .logo_icon_login { width: 142px !important; height: 40px !important; margin: 2px 0; }
+.my_acc_top_bg { padding: 8px 0 !important; }
+
+}
+

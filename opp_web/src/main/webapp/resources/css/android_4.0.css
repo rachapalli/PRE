@@ -1,0 +1,93 @@
+body {
+	overflow: hidden;
+}
+
+.pay_bill_container {
+	float: left;
+	display: block;
+}
+
+#mainHolderOuter{
+	-webkit-transition-property: -webkit-transform;
+    -webkit-transform-origin-x: 0px;
+    -webkit-transform-origin-y: 0px;
+    -webkit-transition-duration: 0ms;
+    -webkit-transform: translate(0px, 0px) scale(1) translateZ(0px);
+    -webkit-backface-visibility: hidden;
+}
+
+#mainpaymentTotalLabel{
+	margin-bottom: 90px;
+}
+
+.defpay_info_parent_container{
+	float: left;
+	width: 100%;
+}
+
+#MainHolder {
+	overflow-y: auto !important;
+	-webkit-backface-visibility: hidden;
+}
+
+#MainHolder * {
+	-webkit-backface-visibility: hidden;
+} 
+
+.defpay_info_parent_container,.defpay_info_container {
+	-webkit-transform: none !important;
+}
+
+.defpay_bg_heading_content {
+	-webkit-transform: translate(0, -50%) !important;
+}
+
+.head-sec {
+	z-index: 1 !important;
+}
+
+.find_bill_bg {
+	background: #fff !important;
+	z-index: 1;
+	margin: 0 !important;
+	padding: 7px 0;
+}
+
+.cred_popup {
+	left: 50%;	
+}
+
+.daysDisplay{
+	overflow-x: hidden !important;
+}
+
+.defpay_bg_heading ul {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+/* popup START  */
+
+#credPopupNoErrorId .alert_close, #credPopupErrorId .alert_close {
+	margin-top: -37px;
+	margin-right: -24px;
+}
+#credPopupNoErrorId.cred_popup, #credPopupErrorId.cred_popup{
+	padding: 0;
+}
+
+#credPopupNoErrorId .cred_popup_diff, #credPopupErrorId .cred_popup_diff {
+	margin-top: 20px;	
+}
+
+#credPopupNoErrorId.background_transparent, #credPopupErrorId.background_transparent {
+	background: #fff !important;
+}
+
+/* popup END  */
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width:767px) {
+	.head-sec {
+		position: relative;
+	}
+}

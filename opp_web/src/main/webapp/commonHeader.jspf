@@ -1,0 +1,48 @@
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
+<%@ page import="java.util.Set" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!--start commonHeader.jspf-->
+
+<!-- Include the script if window.console is not supported by the browser e.g. IE 8.0.6 -->
+<script type="text/javascript">
+	if (!window.console)
+		console = {log: function() {}};
+</script>
+
+<script type="text/javascript">
+
+    <%
+    //proxies will set the X-Forwarded-For header as the clientIp and the remoteAddr would be the ip of the proxy.
+    //if not set, then not using a proxy.
+    String clientIp = request.getHeader("X-Forwarded-For");
+    if (null == clientIp) {
+        clientIp = request.getRemoteAddr();
+    }
+    request.setAttribute("clientIp",clientIp);
+    %>
+    var clientIp = '<c:out value="${requestScope.clientIp}"/>';
+
+    function getClientIp() {
+        return clientIp;
+    }
+
+    var messages = {};
+
+    <%
+    String[] localeParts = ((String)request.getAttribute("loc")).split("_");
+    Integer resourceAppId = (Integer) request.getAttribute("resourceAppId");
+    Locale localeApp = new Locale(localeParts[0],localeParts[1],resourceAppId.toString());
+    ResourceBundle bundle = ResourceBundle.getBundle("opp",localeApp);
+    Set<String> keys = bundle.keySet();
+    for (String key : keys) {
+        String value = bundle.getString(key);
+        String safeValue = value.replaceAll("\"","&quot;");
+    %>messages["<%=key%>"] = "<%=safeValue%>";
+    <%
+    }
+    %>
+    messages["googleMapsApiKey"] = "${requestScope.googleMapsApiKey}";
+
+</script>
+<!--end commonHeader.jspf-->

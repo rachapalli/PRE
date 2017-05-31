@@ -1,0 +1,60 @@
+.logo_icon_login {
+    background: url(../../images/9/logo.png) no-repeat;
+    height:50px;
+    width: 142px;
+    background-size:100% 100%;
+}
+
+.logo_icon {
+    background: url(../../images/9/logo.png) no-repeat;
+    height:50px;
+    width: 142px;
+    background-size:100% 100%;
+}
+
+
+/* Mobile CSS */
+
+@media only screen and (max-width:768px) {
+
+    .nav {
+        padding-top: 0 !important;
+    }
+
+    .signout_nav, .home_nav {
+        top: 46px !important;
+    }
+
+    .add_edit_right_section {
+        display: none !important;
+    }
+
+    .payment_option {
+        clear: both;
+        margin: 0 0 0.5em 0;
+        float: left;
+        width: 100%;
+        font-size: 0.75em;
+        font-family: arial;
+        background-color: #ffffdc;
+    }
+
+    .pmt_opt_mrgn {
+        margin: 5% 10%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1.1em;
+    }
+
+    .pmt_opt2_mrgn {
+        float: left;
+        width: 62%;
+        line-height: 1.4em;
+        margin: 4% 15%;
+        color: #454545;
+        font-family: verdana;
+        font-size: 0.75em;
+    }
+
+}

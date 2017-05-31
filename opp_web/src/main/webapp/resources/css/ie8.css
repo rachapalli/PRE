@@ -1,0 +1,14 @@
+.popup {
+	left: auto;
+	top: 5%;
+}
+
+.overlay {
+   background: #000000;
+   filter: alpha(opacity=60);
+   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+.clear_all_txt, .payment_history_btn {
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CFCFCF', endColorstr='#BBBBBB',GradientType=0 ); /* IE6-9 */   	    
+}

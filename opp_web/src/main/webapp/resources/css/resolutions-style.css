@@ -1,0 +1,3584 @@
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width:767px) {
+	h1 {
+		font-size: 18px;
+		padding: 5px 0 0 !important;
+		text-align: center;
+	}
+	h2 {
+		font-size: 0.8em;
+		padding: 0.2em 0 !important;
+		text-align: left;
+	}
+	strong {
+		font-weight: bold !important;
+	}
+	p {
+		margin: 1em 0 0 !important;
+	}
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #000000;
+		font-size: 1em;
+		margin: 0;
+		line-height: 1em;
+	}
+	.flt_none {
+		float: none !important;
+	}
+	.mob_flt_none {
+		float: none !important;
+	}
+	.mob_flt_lft {
+		float: left !important;
+	}
+	.mob_pos_rel {
+		position: relative;
+	}
+	.mrgn_center {
+		margin: 0 auto !important;
+	}
+	.mrgn_mob_bottom10 {
+		margin-bottom: 10px
+	}
+	
+	.mrgn_mob_none {
+		margin: 0 !important;
+	}	
+	.container {
+		background: #ffffff;
+		width: 100% !important;
+		max-width: 799px !important;
+	}
+
+	/* .mob_container {
+        position: static !important;
+        min-height: 0 !important;
+    } */
+	.main-dv {
+		position: relative;
+		min-height: 100%;
+	}
+	.head-sec {
+		width: 100% !important;
+		position: static;
+		z-index: 0 !important;
+		padding: 2px 0 !important;
+	}
+	.headAccount {
+		display: block;
+	}
+	.head-sec-login {
+		position: static !important;
+		width: 100% !important;
+	}
+    .logo_area_login, .logo_area {
+        height: auto;
+    }
+	.logo_icon_login,.logo_icon {
+		width: 105px !important;
+		height: 37px !important;
+		background-size: 100% 100% !important;
+	}
+	.header_login {
+		max-width: none !important;
+		min-width: 0 !important;
+		padding: 2px 0 !important;
+		z-index: 102;
+	}
+	.row,.login_row {
+		width: 100% !important;
+		padding: 0 !important;
+		position: static !important;
+	}
+	.hght {
+		height: 2.2em !important;
+	}
+	.row_box {
+		overflow-y: scroll !important;
+		/* change from auto to scroll for IOS smooth scrolling. */
+		 -webkit-overflow-scrolling: touch; 
+	}
+	.mob_txt_inv {
+		display: none !important;
+	}
+	.login_subhead_inv {
+		display: none;
+	}
+	.login_container h1 {
+		display: none;
+	}
+
+	/* .promobox_marginarea { margin:1em 0 0;} */
+	.home_nav {
+		position: absolute !important;
+		top: 62px !important;
+		left: 1% !important;
+		z-index: 999 !important;
+	}
+	.add_nav {
+		display: none !important;
+	}
+	.history_nav {
+		display: none !important;
+	}
+	.signout_nav {
+		position: absolute !important;
+		top: 62px !important;
+		right: 1% !important;
+		z-index: 999 !important;
+	}
+	.latestpay_container {
+		display: none !important;
+	}
+	.logo_area {
+		width: 28% !important;
+		margin: 0 1%;
+	}
+	.acc_bg_heading {
+		background: none !important;
+		height: 0 !important;
+	}
+	.refresh_btn {
+		background-image: url(../images/mob_refresh_icon.png) !important;
+		width: 17px !important;
+		height: 18px !important;
+		float: left !important;
+	}
+	.acc_id_txt {
+		display: none !important;
+	}
+	.account_info_container {
+		width: 70% !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		margin: 0.5em 0.3em !important;
+		box-shadow: none !important;
+		border: 0 !important;
+	}
+	.acc_info_cont {
+		display: none !important;
+	}
+	hr#hrMainpayment {
+		display: none !important;
+	}
+	.avl_bal_txt {
+		padding: 0.5em !important;
+		font-size: 0.75em !important;
+		float: left !important;
+	}
+	.onclick_block_area {
+		width: 98%;
+		float: left;
+		clear: both;
+	}
+
+	/* .footer {
+    	width: 100% !important;
+    	font-size: 0.6em !important;
+    	color: #ffffff !important;
+        height: 50px !important;
+        padding: 0 !important;
+        background: #052030;
+        margin: 0 !important;
+    } */
+	.nav {
+		width: 70% !important;
+	}
+	.action_btn_scrollablearea {
+		padding: 0 !important;
+		overflow: hidden !important;
+	}
+	
+	.pay_bill_container {
+		float: left !important;
+	}
+	.accountarow {
+		width: auto !important;
+		float: none !important;
+		display: none !important;
+	}
+	
+	.account_img_area{
+		width: 15%;
+		float: left;
+		padding: 8px 0 10px 1%;
+		font-size: 9px;
+		display: none;
+	}
+	
+	.acc_heading_txt {
+		color: #ffffff;
+		margin: 7% 0% 6% 4%;
+		width: 38%;
+	}
+	
+	.account_box_btn {
+		min-width: 92px;
+		height: 32px;
+		margin: 10px;
+	}
+	.simple_txt {
+		padding: 0.25em !important;
+		font-size: 1.5em !important;
+		display: none !important;
+	}
+	.img_resize {
+		width: 35px !important;
+		height: 35px !important;
+		display: none !important;
+	}
+	.payment_area_container {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 2% 0 !important;
+	}
+	.total_payment_price {
+		padding: 0 2% !important;
+	}
+	.payment_area {
+		float: right !important;
+		width: 34% !important;
+		margin: 15px 0 0 !important;
+	}
+	
+	.defpay_pd_txt {
+		text-align: left !important;
+		margin: 0 !important;
+		padding: 0 2px !important;
+		background: none !important;
+	}
+	
+	.picker.open ul {
+		top: 42px !important;
+	}
+
+	.default_paytxt_heading {
+		width: 64% !important;
+	}
+	
+	.defpay_bg_heading {
+		width: 34% !important;
+	}
+	
+	.pay_bill_inp {
+	}
+	
+	.calenderBar {
+		margin: 1%;
+		width: 98%;
+	}
+	
+	#mobileSelectedPaymentDiv {
+		width: 100%;
+		float: left;
+		background: none repeat scroll 0% 0% #00ADEE;
+	}
+	
+	.posting_ctg_txt {
+		margin: 0 0 0 21% !important;
+	}
+	
+	.font_style {
+		float: left;
+		margin: 8px 0 0 !important;
+	}
+	
+	.defpay_bg_heading_content > .font_style{
+		font-weight: bold;
+		font-size: 16px;
+		margin: 0 !important;
+		float: right !important;
+		line-height: 31px;
+	}
+	
+	.chkout_inp_box {
+		width: 100% !important;
+		box-shadow: inset 1px 1px 6px #888 !important;
+	}
+	
+	.submit_bttn {
+		min-width: 300px !important;
+		display: block;
+		margin: 5px auto;
+	}
+	
+	.cal_area {
+		width: 18% !important;
+		margin: 2% 1% 0 !important;
+	}
+	
+	.cal_area_pay_conf {
+		width: 70% !important;
+		margin: 1% 1% 0 !important;
+	}
+	
+	.cal_area_pay_conf h1 {
+		font-size: 1.2em !important;
+	}
+	
+	.cal_area_pay_conf h3 {
+		font-size: 1em !important;
+	}
+	
+	.cal_area_pay_conf h4 {
+		font-size: 0.75em !important;
+	}
+	
+	.pay_bill_txt {
+		display: none !important;
+	}
+	
+	.sel_payment_container {
+		width: 100% !important;
+		border: none !important;
+		display: none;
+	}
+	
+	.sel_payment_container_chk {
+		width: 100% !important;
+	}
+	
+	.sel_pay_txt_head {
+		font-size: 0.8em !important;
+		padding: 0 2% !important;
+	}
+	
+	.proc_fee_txt {
+		padding: 0 4% !important;
+	}
+	
+	.pdng {
+		float: left !important;
+		clear: none !important;
+		padding: 3px 0 !important;
+	}
+
+	.sel_paybg_heading {
+		display: none !important;
+	}
+	
+	.totalbox_container {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	
+	.pos_rel {
+		margin: 1% 2% !important;
+	}
+	
+	.pos_rel_loc {
+		margin: 0 !important;
+	}
+	
+	.pos_rel_rght {
+		margin: 0 2% !important;
+		float: left !important;
+	}
+	
+	.fixed-right-lan-pnl {
+		right: 0 !important;
+		top: 0 !important;
+	}
+	
+	.signin_sub_txt {
+		background-color: transparent !important;
+	}
+	
+	.login_bg_heading {
+		display: none !important;
+	}
+	
+	.login_container {
+		width: 100% !important;
+		border: 0 !important;
+		padding: 0 !important;
+		box-shadow: none;
+	}
+	
+	.login_frm_container {
+		width: 295px !important;
+		margin: 3% auto !important;
+		padding: 0.25em 0 0 !important;
+	}
+	
+	.login_field {
+		width: 90% !important;
+	}
+	
+	.login_popupfrm_container {
+		width: 70% !important;
+	}
+	
+    .cred_popup {
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin:0;
+    }
+
+	.input {
+		width: 91% !important;
+	}
+	
+	.field label {
+		width: 30% !important;
+		padding: 0.5em 3% 0.5em 5% !important;
+	}
+	
+	.button {
+		width: 75% !important;
+		height: auto !important;
+		margin: 1% 0 0 13% !important;
+	}
+	
+	.lock_icon {
+		left: 25% !important;
+		background-size: 100% 100%;
+		width: 15px !important;
+		height: 20px !important;
+	}
+	
+	.popup_lock_icon {
+		top: 8px !important;
+	}
+	
+	.popup_iframe_box_area {
+		border: solid 1px #ccc;
+		width: 100%;
+		height: 92%;
+		margin: 8% 0 0;
+	}
+    #terms_conditions {
+        display: inline-block;
+        height: 50000px;
+    }
+	
+	.term_cond_btn_area {
+		margin: 0 !important;
+	}
+
+    .terms_cond_btn {
+		font-size: 0.75em !important;
+	}
+	
+	.inner_box {
+		left: 0% !important;
+		top: 5% !important;
+		width: 86% !important;
+		margin: auto;
+		right: 0 !important;
+		-webkit-transform: translate(0%, 0%) !important;
+		transform: translate(0%, 0%) !important;
+	}
+	
+	.account_info_conf_rec_container {
+		display: none !important;
+	}
+	
+	.grey_default_btn {
+		width: auto !important;
+		font-size: 0.75em !important;
+		padding: 0.5em 20% !important;
+	}
+	
+	.green_default_btn {
+		width: auto !important;
+		font-size: 0.75em !important;
+		padding: 0.5em 17% !important;
+	}
+	
+	.submit_payment_container {
+		float: none !important;
+		border: 0 !important;
+		margin: 0 auto !important;
+	}
+	
+	.payment_total_inner {
+		font-size: 0.75em !important;
+		padding: 0 !important;
+		margin: 0.5em 0 !important;
+		width: 100% !important;
+	}
+	
+	.conf_payment_total {
+		width: 55% !important;
+		margin: 0 0 0.5em 15% !important;
+	}
+	
+	.confirm_receipt_bg {
+		text-align: center !important;
+	}
+	
+	.payment_total {
+		width: 100% !important;
+		margin: 0 !important;
+		background-color: #e9e9e9 !important;
+		border-top: solid 1px #ccc !important;
+	}
+	
+	.confirm_receipt_txt {
+		background: #f27d23;
+		padding: 0.2em 0 !important;
+		width: auto !important;
+		box-shadow: 0px 4px 10px #888888 !important;
+		display: block !important;
+	}
+	
+	.receipt_subheadtxt {
+		font-size: 1em !important;
+		text-align: center !important;
+		color: #ffffff !important
+	}
+	
+	.payment_button_area {
+		width: 100% !important;
+	}
+	
+	.pymnt_rcpt_bgarea {
+		background: #1b773c;
+		padding: 0.5em 0 !important;
+		width: auto !important;
+		box-shadow: 0px 4px 10px #888888 !important;
+		display: block !important;
+	}
+	
+	.pymnt_rcpt_bgarea1 {
+		background: url(../images/delivered_icon.png) no-repeat 95% 100%;
+	}
+	
+	.pymnt_section_submit {
+		width: 100% !important;
+		margin: 3% 0 0 !important;
+		overflow: visible !important;
+		border: 0 !important;
+	}
+	
+	.common_table_column {
+		width: 33% !important;
+		padding: 0.5em 0 !important;
+	}
+	
+	.pay_conf_column1 {
+		width: 15% !important;
+	}
+	
+	.pay_conf_column2 {
+		width: 65% !important;
+		font-size: 0.8em !important;
+		font-weight: bold !important;
+	}
+	
+	.pay_conf_column3 {
+		width: 15% !important;
+		font-size: 0.8em !important;
+		text-align: right !important;
+	}
+	
+	.fnt_style_normal {
+		font-weight: normal;
+		margin-top: 5%;
+		font-size: 0.8em !important;
+	}
+	
+	.common_table_titlebg {
+		display: none !important;
+	}
+	
+	.txt_wt {
+		font-weight: bold !important;
+		width: 34% !important;
+	}
+	
+	.txt_alg {
+		text-align: right !important;
+	}
+	
+	.mob_txt_lft {
+		text-align: left !important;
+	}
+	
+	.mob_fnt13 {
+	font-size: 13px;
+	}
+	
+	.common_table_row_even {
+		width: 98% !important;
+		padding: 0 1% !important;
+	}
+	
+	.common_table_row_odd {
+		width: 98% !important;
+		padding: 0 1% !important;
+		height: 60px !important;
+	}
+	
+	.conf_payment_total_res {
+		width: 15% !important;
+		margin-right: 15%;
+	}
+	
+	.acc_info_img {
+		display: none !important;
+	}
+	
+	.add_bill_mob_icon {
+		background: url(../images/mobilenavigation-addbill-icon.png) no-repeat;
+		width: 27px;
+		height: 30px;
+		background-size: 100% 100%;
+		float: left;
+		margin: 6px 30% 0;
+	}
+	
+	.add_money_mob_icon {
+		background: url(../images/mobilenavigation-addmoney-icon.png) no-repeat;
+		width: 40px;
+		height: 30px;
+		background-size: 100% 100%;
+		float: left;
+		margin: 6px 30% 0;
+	}
+	
+	.search-info-inner h6 {
+		padding: 2% 6% 0 !important;
+		font-weight: normal !important;
+		color: #999999 !important;
+	}
+	
+	.search-info-inner {
+		border: 0 !important;
+	}
+	
+	.srch_provider_reset {
+		top: 0.5em !important;
+		right: 2% !important;
+		left: auto !important;
+	}
+	
+	.search_provider_cont {
+		padding: 0 0.6em !important;
+		border: 0 !important;
+		margin: 0 !important;
+		box-shadow: none !important;
+		background: none !important;
+	}
+	
+	.wd_mob_foot1 {
+		width: 33%;
+		float: left;
+	}
+	
+	.wd_moblogin_foot {
+		width: 50%;
+		float: left;
+		font-size: 12px;
+		height: 50px;
+	}
+	
+	.wd_moblogin_foot1 {
+		width: 100%;
+		float: left;
+	}
+	
+	.mob_flt_rght {
+		float: right;
+	}
+	
+	.search-info-inner .text {
+		float: left !important;
+	}
+	
+	.tbl_srch_header {
+		background-color: #b7b8b9;
+		text-align: left;
+		padding: 0.5em 0;
+		font-weight: bold;
+		color: #000;
+		font-size: 0.8em !important;
+		border-bottom: solid 1px #ccc;
+		margin: 0;
+		float: left;
+		width: 100%;
+	}
+	
+	.tbl_srch_find_billheader {
+		display: none;
+	}
+	
+	.tbl_srch_bg {
+		width: 94%;
+		float: left;
+		background: #cccccc;
+		border-bottom: solid 4px #ffffff;
+		padding: 10px 3%;
+	}
+	.tbl_srch_item_lft {
+		float: left;
+		width: 100%;
+		text-align: left;
+		font-style: normal;
+		color: #000;
+		line-height: 20px;
+	}
+	
+	.tbl_srch_item_rght {
+		float: right;
+		width: 1%;
+	}
+	
+	.mini_arrow {
+		background: url(../images/arrow_mob_icon.png) no-repeat;
+		width: 8px;
+		height: 14px;
+		margin-top: 0.6em;
+		float: right;
+	}
+	
+	.paymnt-pad {
+		margin: 0 !important;
+	}
+	
+	.pmt_hist_status {
+		width: 15%;
+		float: left;
+	}
+	
+	.pmt_hist_service_prov {
+		width: 64%;
+		float: left;
+	}
+	.pmt_hist_amount_area {
+		font-family: verdana;
+		color: #052030;
+		font-size: 14px;
+		font-weight: bold;
+		width: 20%;
+		float: left;
+		text-align: right;
+		margin-top: 2px;
+	}
+	
+	.bvw_submit_pmt {
+		background: #f0f9ec;
+		border: 1px solid #c9e7cd;
+		color: #06d01e;
+	}
+	
+	.expressHeight19{
+		height: 19px !important;
+	}
+	
+	.pmt_hist_nm_heading {
+		font-family: verdana;
+		font-size: 16px;
+		font-weight: bold;
+		color: #052030;
+		text-align: left;
+		line-height: 20px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 75%;
+		float: left;
+	}
+	
+	.pmt_hist_dttxt {
+		width: 100%;
+		font-family: verdana;
+		font-size: 13px;
+		color: #052030;
+		text-align: left;
+		font-style: normal;
+		float: left;
+		line-height: 18px;
+	}
+	
+	.tbl_pmt_hist_bg {
+		background: #cccccc;
+		min-height: 50px;
+		padding: 0.2em 0;
+		float: left;
+		width: 100%;
+		margin: 2.5px 0 2.5px;
+	}
+	
+	.schedule_pend_icon_big {
+		color: #052030;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	
+	.pending_icon_big {
+		color: #ffe100;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	
+	.delivered_icon_big {
+		color: #06d01e;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	.failed_icon_big {
+		color: #ff0000;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	.canceled_icon_big {
+		color: #666;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	
+	.search_biller_inputbox {
+		width: 75% !important;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box; /* For Android and old versions of iOS */
+	}
+	
+	.biller_express_icon {
+		background: url(../images/express_icon_history.png) no-repeat;
+	}
+	
+	.login_hr_divider {
+		display: none;
+	}
+	
+	.search_icon {
+		top: 0.8em !important;
+		left: 0.5em !important;
+	}
+	
+	#resultSetArea {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 10px 0 0 !important;
+	}
+	
+	.srch_no_result {
+		margin: 0 0 0 2%; 
+	}
+	
+	.bill_find {
+		margin: 0 !important;
+	}
+	
+	.inner_box_new {
+		margin: 0 !important;
+		box-shadow: none;
+	}
+	
+	.info_btn {
+		background: url(../images/mob_info_icon.png) no-repeat;
+		cursor: pointer;
+		border: 0;
+		width: 19px;
+		height: 19px;
+		float: left;
+		margin: 0.3em 0.5em;
+		background-size: 100% 100%;
+	}
+	
+	.login_forgot_txt {
+		margin: 0 0 15px !important;
+	}
+	
+	.cal_area h3,.cal_area h1 {
+		font-family: arial !important;
+	}
+	
+	.cal_area h1 {
+		padding: 0.3em 0 0 !important;
+		color: #000000 !important;
+		font-size: 0.8em !important;
+	}
+	
+	.find_bill_pdng {
+		padding: 30px 0 0 0;
+	}
+		
+	.defpay_info_attalertcontainer {
+	
+	}
+	
+	.attention_alert_icon {
+		display: none;
+		background: none !important;
+	}
+	
+	.defpayattalert_txt {
+		display: none;
+	}
+	
+	.defpayattalert_txt_hd {
+		color: #000;
+		padding: 0 0 0 21%;
+		font-size: 0.7em;
+		font-style: normal;
+		line-height: 1.5em;
+		display: block !important;
+	}
+	
+	.attn_alrt_icon {
+		width: 35px;
+		height: 35px;
+		background: url(../images/warning_sign_icon.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.edit_icon {
+		margin-right: 0.5em;
+	}
+	
+	.history_icon {
+		margin-right: 0.5em;
+	}
+	
+	.attnalert_cal_area {
+		display: none !important;
+	}
+	
+	.get_start_area {
+		width: 295px !important;
+	}
+	
+	.login_getstart_btn {
+		min-width: 90% !important;
+	}
+	
+	.create_account_container {
+		margin: 0 !important;
+		border: 0 !important;
+		min-height: 0 !important;
+	}
+	
+	.create_acc_field,.edit_profile_field {
+		height: auto !important;
+	}
+	
+	.edit_profile_field label,.create_acc_field label {
+		width: 100% !important;
+		/* margin: 0 0.2em !important; */
+	}
+	
+	.edit_profile_field input,.create_acc_field input {
+		width: 100% !important;
+		/* margin: 0 0.25em !important; */
+		padding: 10px 1%;
+	}
+	
+	.edit_profile_field select, .create_acc_field select {
+		width: 100% !important;
+		/* margin: 0 0.25em !important; */
+		padding: 10px 0 !important;
+	}
+	
+	.mrgn_lft {
+		margin: 0 !important;
+	}
+	
+	.create_prof_button {
+		width: 75% !important;
+		margin: 0.2em 0.5em !important;
+		float: none;
+	}
+	
+	.create_acc_field input[type="checkbox"] {
+		width: 18px !important;
+	}
+	
+	.click_here {
+		padding: 0;
+		float: none !important;
+		clear: both !important;
+		width: 100% !important;
+		/* margin: 0 2% !important; */
+	}
+	
+	.srch_provider_mrgn {
+		font-size: 16px;
+		font-weight: bold;
+		color: #052030;
+		text-align: left;
+		line-height: 20px;
+		margin: 0 2% 0 !important;
+	}
+	
+	.create_acc_frmrgn {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.error_msg_display {
+		display: none !important;
+	}
+	
+	.mob_error_msg {
+		background: #ff0000;
+		color: #ffffff;
+		font-size: 0.9em;
+		padding: 0.5em 1%;
+		text-align: left;
+		min-width: calc(98% + 4px);
+		width: 98%;
+		margin: 0.2em 0 0.3em;
+		clear: both;
+	}
+	
+	.add_blue_hint {
+		background: #b5e8ff;
+		color: #000000;
+		font-size: 0.75em;
+		padding: 0.4em;
+		line-height: 15px;
+	}
+	
+	.edit_profile_acc_container {
+		display: none;
+	}
+	
+	.edit_profile_section_lft,.edit_profile_section_rght {
+		width: 96% !important;
+		margin: 0 2%;
+	}
+	
+	.change_pass_btn {		
+		width: 100%;
+		/* padding: 0.5em 0 !important; */
+		margin: 2px auto;
+		min-width: 0;
+	}
+	
+	.mng_card_pdng {
+		width: 100% !important;
+	}
+	
+	.hidden{
+		display: none;
+	}
+	
+	.add_money_section_rght {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.add_money_framebox {
+		margin: 1em 5% 0 !important;
+	}
+	
+	.add_money_section_lft {
+		width: 100% !important;
+		margin: 1em 0 !important;
+		padding: 0 !important;
+	}
+	
+	.add_money_section_rght {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.add_money_container {
+		padding: 0 !important;
+		margin: 0 !important;
+		border: 0 !important;
+		box-shadow: none;
+	}
+	
+	.add_money_mainbg {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.add_money_btnsec {
+		width: 98% !important;
+		margin: 1% 0 0 2% !important;
+	}
+	
+	.create_prof_grey_btn {
+		padding: 0.5em 1em !important;
+	}
+	
+	.add_money_iframearea {
+		height: 250px !important;
+	}
+	
+	.add_money_subheading {
+		display: none !important;
+	}
+	
+	.mobile_title_area {
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin: -5px auto 0;
+	}
+	
+	.add_money_success_sec {
+		margin: 0 !important;
+	}
+	
+	.tooltiptail {
+		display: none !important;
+	}
+	
+	.add_money_sucmrgn {
+		margin-right: 24% !important;
+	}
+	
+	.add-edit-biller-container {
+		width: 100% !important;
+		margin: 0 !important;
+		border: 0 !important;
+	}
+	
+	.add_edit_left_section {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	
+	.add_edit_right_section {
+		width: 100% !important;
+		padding: 0 !important;
+		height: 250px !important;
+	}
+	
+	.addbill-td {
+		width: 96% !important;
+		/* padding: 2% !important; */
+	}
+	
+	.new-textarea {
+		width: 80% !important;
+		margin-left: 0.5em !important;
+	}
+	
+	.add_edit_user_data {
+		width: 96% !important;
+		margin: 0 2% !important;
+	}
+	
+	.sv_bill_btn {
+		float: left !important;
+		padding: 0.5em 2em !important;
+	}
+	
+	.pdng_add_edit {
+		padding: 0.5em !important;
+	}
+	
+	.inner_box_blnc_dtl {
+		margin: 0 !important;
+	}
+	
+	.picker ul {
+		min-width: 112px !important;
+	}
+	
+	.paymnt_receipt_print_btn {
+		display: none;
+	}
+	
+	.paymnt-btns {
+		width: 70% !important;
+	}
+	
+	.paymnt-btns ul li {
+		padding: 1em 1.5em !important;
+	}
+	
+	.paymnt_receipt_save_btn {
+		margin: 1em 0 !important;
+	}
+	
+	.paymnt_receipt_email_btn {
+		margin: 1em 0 !important;
+	}
+	
+	.add_button_nobiller {
+		top: 88px !important;
+	}
+	
+	.trans_hist_cont {
+		clear: both;
+		float: right;
+	}
+	
+	.trans_hist_save_icon,.trans_hist_email_icon {
+		margin: 0 !important;
+		height: 32px !important;
+		background-size: auto !important;
+	}
+	
+	/* .mySearchLoading {
+		right: 14% !important;
+		top: 0.5em !important;
+		left: auto !important;
+	} */
+	
+	.create_prof_green_btn {
+		padding: 0.5em 1em !important;
+	}
+	
+	.mob_clear {
+		clear: both;
+	}
+	
+	.mob_mrgn_left10 {
+		margin-left: 10px !important;
+	}
+	
+	.add_mny_fltlft {
+		float: none !important;
+		margin-right: 0.2em !important;
+	}
+	
+	.close_txt {
+		display: none !important;
+	}
+	
+	.slide_down_lft_error_sec {
+		margin: 0.5em !important;
+	}
+	
+	.slide_down_error_mainbg,.slide_down_success_mainbg {
+		width: 100% !important;
+		border: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.slide_down_lft_sec {
+		width: 25% !important;
+	}
+	
+	.main_cont_attalert {
+		top: 0 !important;
+		right: 0 !important;
+		display: block !important;
+		width: 29% !important;
+		margin: 0.6em 0 !important
+	}
+	
+	.input_attalert_mob {
+		width: 84%;
+		box-shadow: inset 1px 1px 6px #888;
+	}
+	
+	.cloZer {
+		margin: 0;
+	}
+	
+	.clozer_rederror {
+		margin: 0.5em 0 !important;
+		padding: 0 !important;
+	}
+	
+	.action_btn_scrollablearea {
+		height: 0 !important;
+	}
+	
+	.addmoney_pos_rel {
+		display: inline-block;
+	}
+	
+	.lgn_btn_forgetpass {
+		width: 100% !important;
+	}
+	
+	.lgn_inp_center_area {
+		width: 100% !important;
+	}
+	
+	.login_forgot_length {
+		width: 90% !important;
+	}
+	
+	.locatormain {
+		height: 100% !important;
+		margin: 0 1%;
+	}
+	
+	.map-area {
+		width: 130px !important;
+	}
+	
+	.map_add_info {
+		line-height: 18px !important;
+	}
+	
+	.map-area-rightsec {
+		width: 80px !important;
+	}
+	
+	.pnl_area {
+		width: 60% !important;
+	}
+	
+	.locator_pnl_lftsec {
+		width: 15% !important;
+	}
+	
+	.locator_pnl_rghtsec {
+		width: 75% !important;
+	}
+	
+	.amt_input_reset {
+		left: 90% !important;
+		top: 0.5em !important;
+	}
+	
+	.account_details_area {
+		margin: 0 5px !important;
+		background: none !important;
+		border: none !important;
+		z-index: 1 !important;
+		padding: 0 !important;
+	}
+	
+	.clear_all_txt {
+		display: none !important;
+	}
+	
+	.create_profile_lft_pos,.edit_profile_lft_pos {
+		float: none !important;
+	}
+	
+	.mobwidth_area100 {
+		width: 100% !important;
+	}
+	
+	.center_mrgn_align {
+		width: 100%;
+		margin: 5% auto;
+		display: block;
+	}
+	
+	.nw_bill_area {
+		width: 100% !important;
+		margin: 0 0 5px 0 !important;
+	}
+	
+	.add_billnw_btn {
+		padding: 20px 0 !important;
+	}
+	
+	.footer_disp_inv {
+		display: block !important;
+	}
+	
+	.add_bill_btntxt {
+		margin: 0 25% !important;
+	}
+	
+	.add_bill_txt {
+		line-height: 18px;
+	}
+	
+	.submit_payment_nwarea {
+		width: 100% !important;
+		margin: 2% 0 !important;
+		border: 0 !important;
+	}
+	
+	.submit_payment_nwarea h2 {
+		padding: 0.5em !important;
+		font-size: 0.9em !important;
+	}
+	
+	.rvw_bill_headingbg {
+		display: none !important;
+	}
+	
+	.txt_lft_pdng {
+		display: none !important;
+	}
+	
+	.chkout_cal_area {
+		float: left;
+		width: 100%;
+		margin: 1% 1% 0 !important;
+		border: solid 1px #000000;
+		box-shadow: inset 0 1px 1px #ffffff, 0 1px 2px rgba(0, 0, 0, 0.31);
+		background: #ffffff;
+		display: block !important;
+	}
+	
+	.chkout_cal_area h1 {
+		font-family: verdana;
+		margin: 0;
+		padding: 0.3em 0 0;
+		text-align: center;
+		color: #000000;
+		font-size: 0.9em;
+		line-height: 0.8em;
+		background: #ffffff !important;
+	}
+	.chkout_cal_area h3 {
+		font-family: verdana;
+		font-weight: bold;
+		margin: 0;
+		font-size: 0.6em;
+		text-align: center;
+		color: #ffffff;
+		background: #838383 url(../images/calendar-header-dots.png) no-repeat top right;
+	}
+	
+	.chkout_cal_area h4 {
+		font-family: verdana;
+		margin: 0;
+		padding: 0 0.45em;
+		text-align: center;
+		color: #929292;
+		font-size: 0.6em;
+	}
+	.rvw_bill_sec_bg,.rvw_bill_oddsec_bg {
+		background: #aeadad !important;
+	}
+	.rvw_bill_sec_srvprotxt {
+		width: 45% !important;
+	}
+	.rvw_bill_editsec {
+		width: 13% !important;
+		float: right !important;
+		margin: 0 5px 0 0;
+	}
+	.payment_speed_heading {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.payment_speed_heading1 {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.payment_speed_smalltxt {
+		font-size: 0.9em;
+		font-weight: bold;
+	}
+	.add_pmt_wd_a {
+		display: none !important;
+	}
+	.add_pmt_panel {
+		width: 100% !important;
+		background-color: #aeadad;
+		padding: 5px 0 !important;
+		margin: 0 !important;
+	}
+	.add_pmt_wd_b {
+		width: 25% !important;
+	}
+	.add_pmt_wd_d {
+		width: 36% !important;
+	}
+	.chkout_add_pmt_sec {
+		width: 65% !important;
+	}
+	.add_pmt_totalamt {
+		width: 25% !important;
+	}
+	.chkout_btnmrgn_area {
+		width: 98% !important;
+		float: none !important;
+		margin: 1% auto !important;
+	}
+	.lftpos_mrgn36 {
+		margin-left: 0 !important;
+	}
+	.additional_info_box {
+		width: 94% !important;
+		margin: 2% !important;
+		padding: 1% !important;
+	}
+	.additional_info_box h1 {
+		text-align: left !important;
+	}
+	.chkout_guest_profile_nwarea {
+		width: 92% !important;
+		margin: 3% 1% 1% !important;
+	}
+	
+	.guest_chkout_wid{
+		width: 92% !important;
+		padding: 0 2% !important;
+		margin: 2% 2% !important;
+	}
+	.chkout_profile_width {
+		width: 96% !important;
+		padding: 0 1% !important;
+	}
+	.add_bill_bluemsg_frmarea {
+		width: 100% !important;
+	}
+	.chkout_guest_profile_nwarea input[type="text"],.chkout_guest_profile_nwarea input[type="password"],
+	.chkout_guest_profile_nwarea input[type="tel"]
+		{
+		width: 100% !important;
+		padding: 10px 1% !important;
+	}
+	.chkout_guest_profile_nwarea label {
+		width: 90% !important;
+		padding: 0 !important;
+	}
+	.chkout_guest_profile_nwarea h1 {
+		text-align: left;
+		line-height: 20px;
+		padding: 0.1em !important;
+	}
+	/* .add_bill_btnmrgn_area {
+		width: 96% !important;
+		margin: 1% 2% !important;
+	} */
+	.mob_wid10 {
+		width: 10% !important;
+	}
+	.mob_wid48 {
+		width: 48% !important;
+	}
+	.mob_wid50 {
+		width: 50% !important;
+	}
+	.mob_wid66 {
+		width: 66% !important;
+	}
+	.mob_wid80 {
+		width: 80% !important;
+	}	
+	.mob_wid92 {
+		width: 92% !important;
+	}
+	.mob_wid100 {
+		width: 100% !important;
+	}
+	.mob_white_txt {
+		color: #ffffff !important;
+	}
+	.mob_backbtn_mrgn {
+		margin: 2% 0 !important;
+	}
+	.additional_info_box label {
+		margin: 0 3px !important;
+		width: 95% !important;
+	}
+	.additional_info_box input[type="text"] {
+			width: 96% !important;
+			padding: 10px 1% !important;
+	}
+	.add_bill_mrgn {
+		margin: 1em 2% !important;
+	}
+	.receipt_view_desg_area {
+		width: 100% !important;
+	}
+	.receipt_view_desg_area h2 {
+		text-align: center !important;
+		padding: 0.5em 0 !important;
+		font-size: 0.8em !important;
+	}
+	.bill_submission_desg_area {
+		width: 100% !important;
+	}
+	.receipt_view_desg_sec_hd {
+		width: 100% !important;
+		font-size: 12px !important;
+		padding: 5px 0 !important;
+	}
+	.receipt_vw_action_printbtnarea {
+		display: none !important;
+	}
+	.receipt_vw_action_savebtnarea {
+		display: none !important;
+	}
+		
+	.locator_blue_hdng_area {
+		display: block !important;
+	}
+	.bill_view_desg_area,.summary_receipt_view_desg_area {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	.bill_view_desg_area h2,.summary_receipt_view_desg_area h2 {
+		padding: 8px 5px !important;
+		text-align: left;
+		font-size: 0.8em !important;
+	}
+	.locator_blue_hdng_area h2 {
+		font-size: 15px;
+		color: #052030;
+		font-weight: bold;
+		margin: 0;
+		padding: 8px 5px 8px 3px !important;
+		text-align: left;
+	}
+	
+	.summary_receipt_view_btn {
+		float: left !important;
+	}
+	.hist_dt_rcpt_total_paid {
+		padding: 10px 0 !important;
+	}
+	
+	.receipt_view_total_paid {
+		margin: 0 1% !important;
+		font-size: 15px !important;
+		width: 21%;
+	}
+	
+	.edit_profile_btnarea {
+		width: 96% !important;
+		margin: 2% 1% !important;
+	}
+	.more_load_location_icon {
+		background-image: url(../images/morebutton-load-locations-icon.png);
+		width: 10px;
+		height: 14px;
+		display: block;
+		float: left;
+		margin: 0 0.75em;
+	}
+	.more_edit_profile_icon {
+		background-image: url(../images/morebutton-edit-profile-icon.png);
+		width: 17px;
+		height: 20px;
+		display: block;
+		float: left;
+		margin: 0 0.75em;
+	}
+	.pmt_summary_desg_area {
+		width: 100% !important;
+	}
+	.pmt_summary_desg_area h2 {
+		padding: 10px 40px !important;
+	}
+	.header_navinner_area {
+		display: none !important;
+	}
+	.additional_infomsg {
+		width: 95% !important;
+		padding: 2% !important;
+		margin: 0 !important;
+	}
+	.account_field {
+		width: 100% !important;
+	}
+	.my_acc_top_bg {
+		width: 100% !important;
+		padding: 4px 0 !important;
+	}
+	.my_acc {
+		display: none;
+	}
+	.list_details {
+		padding: 5px 0 5px 5px !important;
+		right: 0 !important;
+		z-index: 1;
+	}
+	.acc_box_mrgn {
+		margin: 0 !important;
+		float: right !important;
+	}
+
+	/* ul.guest_user_area li:first-child { border:none !important;} */
+	.guest_user_area {
+		background: none !important;
+		padding: 5px !important;
+	}	
+	ul.header_navinner_area li{
+		font-size: 12px !important;
+		float: none !important;
+	}	
+	ul.guest_user_area li {
+		font-size: 16px !important;
+		float: none !important;
+	}	
+	.hist_summary_dtlback_btn {
+		background: #00adee;
+		float: left;
+		font-size: 12px;
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+		min-width: 50px;
+		height: 30px;
+		padding: 0 5px;
+		cursor: pointer;
+		-webkit-appearance: none;
+		display: block !important;
+		border: 0;
+		border-radius: 0;
+	}
+	.hist_summary_dtlback_btn:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.mob_btn_rght {
+		float: right !important;
+	}
+	.login_submit_btn {
+		min-width: 100%;
+	}
+	.login_pnl_btnmrgn {
+		width: 90% !important;
+		margin: 0 auto 0.75em !important;
+	}
+	.locator_go_btn {
+		left: 88% !important;
+	}
+	.pnl_area {
+		display: none !important;
+	}
+	.pan_container {
+		display: none !important;
+	}
+	.login_popup_forgettxt {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	.promo_box_container {
+		border: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.account_box_mobmsg {
+		display: block !important;
+		position: absolute;
+		color: #0f6bd1;
+		font-size: 11px;
+		font-weight: bold;
+		margin: 0 0.3em;
+	}
+	
+	.login_popup_tooltiptail {
+		top: -30px !important;
+		right: 20px !important;
+	}
+	
+	
+	.login_popup_pos {
+		top: 40px !important;
+	}
+	
+	.pin_errormsg_area {
+		margin: 0 0 0 55px !important;
+		width: 90px !important;
+	}
+	
+	.pin_errormsg_area1 {
+		width: 90px !important;
+	}
+	
+	.signup_container_area {
+		width: 96% !important;
+	}
+	
+	.mrgn_acc_box {
+		margin: 0 !important;
+	}
+	
+	.receipt_vw_action_btnarea {
+		margin: 0;
+	}
+	
+	.return_receipt_vwarea {
+		margin: 0.5em 0 !important;
+		width: 100% !important;
+	}
+		
+	.mob_mrgn_top_none {
+		margin-top: 0 !important;
+	}
+	
+	.mob_mrgn_top5 {
+		margin-top: 3px !important;
+	}
+	
+	.mob_mrgn2 {
+		margin: 2% !important;
+	}
+	
+	.mob_mrgn0 {
+		margin: 0 !important;
+	}
+	
+	.mob_mrgn_left2{
+		margin-left: 2%;
+	}
+	
+	.mob_mrgn_left3{
+		margin-left: 3%;
+	}
+	
+	.mrgn_chkout_topsect {
+		margin-top: 10px !important;
+	}
+	
+	.icon_pos {
+		top: -3px;
+		left: -12px;
+	}
+	
+	.icon_wid_modify {
+		margin: 0 0 0 2% !important;		
+	}
+	
+	.rvw_bill_sec_txt {
+		width: 12% !important;
+	}
+	
+	.add_pmt_biller {
+		width: 55% !important;
+		font-size: 18px;
+		padding: 5px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.add_pmt_editsec {
+		width: 10% !important;
+		margin-left: 0 !important;
+	}
+	
+	.add_pmt_even_sec,.add_pmt_odd_sec {
+		padding: 0 !important;
+	}
+	
+	.add_pmt_plus_icon,.add_pmt_minus_icon {
+		background: url(../images/add_pmt_lrgplus_icon.png) no-repeat !important;
+		width: 28px !important;
+		height: 29px !important;
+	}
+	
+	.add_pmt_minus_icon {
+		background: url(../images/add_pmt_lrgminus_icon.png) no-repeat
+			!important;
+	}
+	
+	.add_pmt_amt {
+		width: 25% !important;
+		font-size: 18px !important;
+		padding: 5px 0 !important;
+	}
+	
+	.width_area18 {
+		width: 18% !important;
+	}
+	
+	.mob_width_area60 {
+		width: 60% !important;
+	}
+	
+	.mob_width_area95 {
+		width: 95% !important;
+	}
+	
+	.brdr_top {
+		border-top: solid 1px #000000;
+	}
+	
+	.add_pmt_billersec_area {
+		padding: 5px 0;
+		float: left;
+		width: 100%;
+		background: #eaeaea !important;
+	}
+	
+	/* .popup {
+		left: 0 !important;
+		top: 5% !important;
+		margin: auto;
+		right: 0 !important;
+		-webkit-transform: translate(0%, 0%) !important;
+		transform: translate(0%, 0%) !important;
+	} */
+		
+	.popup_iphone5 {
+		overflow-y: scroll !important;
+	}
+	
+	/* .popup_android {
+		padding: 15px 5px !important;
+		position: absolute !important;
+		min-width: 88%;
+		min-height: 30%;
+		width: auto !important;
+		height: 60% !important;
+		margin: 0 1% !important;
+		overflow: hidden !important;
+	} */
+	
+	.android_iframe_box_area {
+		height: auto !important;
+		min-height: 75%;
+	}
+	
+	.continue_guest_btn {
+		min-width: 90% !important;
+		margin-bottom: 4% !important;
+		font-size: 1em !important;
+	}
+	
+	.locator_heading_txt {
+		padding: 0 0.2em !important;
+	}
+	
+	#add_edit_biller_area .add_bill_hght_sep {
+		height: auto;
+	}
+	
+	.login_chkbox {
+		padding: 0 4% !important;
+		text-align: left !important;
+	}
+	
+	.add_blue_mobile_hint {
+		margin: auto;
+		width: 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box; /* For Android and old versions of iOS */
+	}
+	
+	.login_spacer {
+		height: 1em;
+	}
+	
+	.acc_bal_amt {
+		top: 25px !important;
+		font-size: 0.75em !important;
+		z-index: 0 !important;
+	}
+	
+	.expedited_txt {
+		padding: 0 2%;
+		color: #999999;
+	}
+	
+	.payment_price {
+		padding: 0 2% !important;
+	}
+	
+	.add_pmt_redinfotxt,.mob_algn_center {
+		text-align: center;
+	}
+	
+	.pay_connect_info {
+		width: 96%;
+		padding: 0.75em 2%;
+		margin: 0 auto;
+	}
+	
+	.pay_connect_area {
+		width: 100%;
+	}
+	
+	#mobBackButtonForAuxList,#mobBtnSaveAuxiliaryList {
+		display: block;
+	}
+	
+	.payconnect_data_a {
+		width: 32% !important;
+	}
+	
+	.hist_summary_rcpt_vwtxt_area {
+		word-break: normal !important;
+		font-weight: bold;
+		font-size: 14px !important;
+	}
+	
+	.hist_summary_rcpt_vwtxt_area1 {
+		word-break: normal !important;
+	}
+	
+	.new_carduser_btn {
+		width: 98% !important;
+		padding: 0.75em 1% !important;
+		cursor: pointer !important;
+	}
+	
+	.card_infobox {
+		width: 98% !important;
+		position: static !important;
+		padding: 0.5em 1% !important;
+		cursor: pointer;
+	}
+	
+	.cash_infobox {
+		position: static !important;
+	}
+	
+	.card_user_area {
+		width: 36% !important;
+	}
+	
+	.add_pmt_method_cardarea label {
+		width: 95% !important;
+		padding: 0 !important;
+	}
+	
+	.styled-select {
+		width: 96% !important;
+		padding: 10px 1% !important;
+	}
+	
+	.mob_vesta_wd2 {
+		width: 2% !important;
+	}
+	
+	.mob_vesta_wd10 {
+		width: 10% !important;
+	}
+	
+	.mob_vesta_wd18 {
+		width: 18% !important;
+	}
+	
+	.mob_vesta_wd25 {
+		width: 25% !important;
+	}
+	
+	.mob_vesta_wd30 {
+		width: 30% !important;
+	}
+	
+	.mob_vesta_wd28 {
+		width: 28% !important;
+	}
+	
+	.mob_vesta_wd45 {
+		width: 45% !important;
+	}
+	
+	.mob_vesta_wd48 {
+		width: 48%;
+	}
+	
+	.mob_vesta_wd50 {
+		width: 50% !important;
+	}
+	
+	.mob_vesta_wd55 {
+		width: 55% !important;
+	}
+	
+	.mob_vesta_wd65 {
+		width: 65% !important;
+	}
+	
+	.mob_vesta_wd70 {
+		width: 70% !important;
+	}
+	
+	.mob_vesta_wd78 {
+		width: 78% !important;
+	}
+	
+	.mob_vesta_wd80 {
+		width: 80% !important;
+	}
+	
+	.mob_vesta_wd90 {
+		width: 90% !important;
+	}
+	
+	.mob_vesta_wd95 {
+		width: 95% !important;
+	}
+	
+	.mob_vesta_wd100 {
+		width: 100% !important;
+	}
+	
+	.vesta_forward_icon {
+		background-image: url(../images/expand-arrow.png) !important;
+		width: 10px !important;
+		height: 22px !important;
+		cursor: pointer;
+	}
+	
+	.debit_vesta_btnarea {
+		/* text-align: center; */
+	}
+	
+	.extend_cash_input_def{
+		width: 18%;
+	}
+	
+	.extend_cash_input_def3{
+		width: 24%;	
+	}
+	
+	.cash_input_def {
+		width: 16% !important;
+	}
+	
+	.buck_amount_box {
+		width: 40% !important;
+	}
+	
+	.reloadit_pack_width {
+		width: 35% !important;
+		margin: 0 1% !important;
+	}
+	
+	.vesta_summary_totalarea {
+		width: 98% !important;
+	}
+	
+	.complete_cashitem_cont {
+		width: 98% !important;
+		padding: 1% !important;
+	}
+	
+	.cash_img_slot {
+		margin: 10px 5px !important;
+	}
+	
+	.cash_label_def {
+		min-width: 98% !important;
+		margin: 1% !important;
+	}
+	
+	.card_input_pos {
+		position: static !important;
+	}
+	
+	.card_fee {
+		width: 36% !important;
+	}
+	
+	.card_field_sep {
+		margin: 5px 0 10px !important;
+	}
+	
+	.checked_def_img {
+		margin: 0 5px !important;
+	}
+	
+	.mob_vesta_mrgn_null,.mrgn_null {
+		margin: 0 !important;
+	}
+	
+	.nw_credit_icon {
+		left: 25px !important;
+	}
+	
+	.card_ending_txt {
+		margin: 0 5% 5%;
+	}
+	
+	.payconnect_area {
+		width: 98% !important;
+		padding: 1% !important;
+		margin: 0 !important;
+		background: #adaeaf;
+	}
+	
+	.body_bg {
+		display: none !important;
+	}
+	
+	.payconnect_data {
+		min-height: 40px !important;
+		padding: 4% 2% 0 !important;
+	}
+	
+	.aux_maincontainer {
+		float: none;
+		overflow-y: initial;
+	}
+	
+	.mob_aux_fltlft {
+		float: left;
+		margin-right: 5px;
+	}
+	
+	.signup_img_container {
+		width: 315px !important;
+		margin: 5px 0 10px 4px !important;
+	}
+	
+	.cash_packbtn {
+		width: 98% !important;
+		margin: 2% 1% !important;
+	}
+	
+	.pay_mrgn { /* position: static !important; */
+	
+	}
+	
+	.evolve_help_txt {
+		padding: 10px 2% !important;
+	}
+	
+	.debit_cardtxtbox_wid {
+		width: 50px !important;
+		padding: 0 3px !important;
+	}
+	
+	.chkout_blueerr_box {
+		padding: 5px 0 !important;
+	}
+	
+	.mob_mrgn_area1 {
+		margin: 1%;
+	}
+	
+	.dbt_card_usermrgn {
+		margin-top: 3px !important;
+	}
+	
+	.sv_card_later {
+		width: 98% !important;
+		float: left !important;
+		padding: 1% !important;
+	}
+	
+	.disp_show_hide {
+		display: inline-block !important;
+	}
+	
+	.cash_user_area {
+		width: 98% !important;
+		margin: 0 1% 10px !important;
+	}
+	
+	.reset_pass_lbl {
+		width: 140px !important;
+	}
+	
+	.overlay {
+		top: -300px !important;
+	}
+	
+	.search_biller_area {
+		width: 96% !important;
+		margin: 1% 2% !important;
+	}
+	
+	/* .search_biller_deftxt {
+		margin: 0 !important;
+		padding: 0 8px !important;
+		color: #999999;
+	} */
+	
+	.search_biller_area1 {
+		width: 96%;
+		float: right;
+		margin: 2px 2%;		
+	}	
+	
+	.opt_in_txt {
+		width: 100% !important;
+	}		
+	
+	.app_store_area {		
+		margin: 4px 0 0;
+	}
+	
+	.mob_return_mrgn,.mob_return_mrgn1 {
+		width: 70% !important;
+		margin: 5px 0 !important;
+	}
+	
+	.mob_return_mrgn1 {
+		width: 30% !important;
+	}
+	
+	.gm-style-iw {
+		width: 155px !important;
+	}
+	
+	.main_txt_wrap_area {
+		width: 100% !important;
+	}
+	
+	.progress-bar {
+		position: absolute !important;
+	}
+	
+	.discount_promoarea {
+		width: 94% !important;
+		margin: 3% !important;
+		text-align: left;
+	}
+	
+	.lgn_input_wid {
+		width: 70% !important;
+	}
+	
+	.locator_input {
+		width: 275px !important;
+		margin-left: 1%;
+	}
+	
+	.mob_more_section ul {
+		margin: 0 1% !important;
+		width: 98% !important;
+	}
+	
+	.add_pmt_method_cardarea input[type="text"],.add_pmt_method_cardarea input[type="tel"], .add_pmt_method_cardarea input[type="password"],
+	.add_pmt_method_cardarea select
+		{
+		width: 100%;
+		margin: 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		}
+	
+	.mob_select_wd148 {
+		width: 148px !important;
+	}
+	
+	.input_style {
+		width: 140px !important;
+	}
+	
+	.discount_promo_headingtxt {
+		margin: 5% 0 0 2% !important;
+	}
+	
+	.chkout_guest_profile_promoarea {
+		width: 94% !important;
+		margin: 1% !important;
+		padding: 2% !important;
+	}
+	
+	.chkout_guest_profile_promoarea label {
+		width: 80% !important;
+		padding: 0 !important;
+	}
+	
+	.chkout_guest_profile_promoarea input[type="text"],.chkout_guest_profile_promoarea input[type="password"], .chkout_guest_profile_promoarea input[type="tel"]
+		{
+			width: 100% !important;
+			padding: 10px 1% !important;
+		}
+	
+	.billtotal_sep {
+		width: 48% !important;
+		margin: 0 0 0 52px !important;
+	}
+	
+	.billtotal_sep1 {
+		width: 18% !important;
+	}
+	
+	.dmy_cls {
+		/* class used for reference on run time for login footer on mobile. */
+		
+	}
+	.footer_login_cls,.footer_login_cls1 {
+		float: left;
+		margin: 15px 0px 0 20px;
+	}
+	
+	.footer_login_cls1 {
+		margin: 18px 0px 0 10px;
+	}
+	
+	.main-holder-marg {
+		margin: 0 !important;
+		-webkit-transform: translate3d(0,0,0);
+	}
+	
+	.min-height-new {
+		min-height: 63px;
+	}
+	
+	.edit_bill_optin {
+		margin: 0 16em 1em 0em;
+	}
+	
+	.update-new-btn {
+		width: 100% !important;
+	}
+	
+	.discover_card_icon {
+		width: 70px !important;
+		background-size: 100% 55%;
+		height: 23px;
+	}
+	
+	.profile_card_area .discover_card_icon{
+		background-size: 100% 50%;
+		height: 26px;
+	}
+	
+	.mrgn_pmt_sumbtn {
+		margin: 0 0 5px;
+	}
+	
+	.def_hr_divider {
+		width: 98% !important;
+	}
+	
+	.mrgn_center5 {
+		margin: 5px auto;
+	}
+	
+	.mob_fbalgn {
+		clear: both;
+		margin-left: 15px;
+	}
+	
+	.mob_wid88 {
+		width: 88% !important;
+	}
+	
+	.mob_min_wid288 {
+		min-width: 288px !important;
+	}
+	
+	.mob_wid94 {
+		width: 94% !important;
+	}
+	
+	.mob_wid99 {
+		width: 99% !important;
+	}
+	
+	.mob_mrgn_lft5 {
+		margin-left: 5px !Important;
+	}
+	
+    .cvv_input {
+        width: 200px !important;
+    }
+
+	.container {
+		width: 100%;
+	}
+	
+	.main-holder-marg {
+		width: 100%;
+		float: left;
+		overflow-y: auto !important;
+	}
+	
+	.account_infoarea {
+		display: none !important;
+	}
+	
+	.wrapper_area {
+		width: 100%;
+	}
+	
+	.head-sec {
+		width: 100%;
+	}
+	
+	body {
+		overflow: hidden;
+	}
+		
+	.onclick_block_area {
+		clear: both;
+	}
+	
+	.wd_mob_foot {
+		width: 25%;
+		margin: 0;
+	}
+	.wd_mob_foot_login {
+		width: 50%;
+		margin: 0;
+	}
+	
+	.pay_bill_dropdown {
+	}
+	
+	.defpay_bg_heading ul {
+	}
+	
+	.submit_text{
+		width: 87%;
+	}
+	
+	.general_submit .fa-times, .general_error .fa-times, .general_success .fa-times{
+		width: 8%;
+	}
+	
+	.general_submit_close, .general_error_close, .general_success_close {
+		width: 8%;
+	}
+	
+	.add_biller_nicknamesec {
+		float: left;
+		width: 96%;
+		clear: both;
+		margin: 0 2%;
+	}
+	
+	.blockImp{
+		display: block !important;
+	}
+	
+	#accountInfoId{
+		width: 267px;
+		z-index: 1;
+	}
+	
+	.wrapper_area {
+		z-index: 2;
+		background: #fff;
+	}
+	
+	.avl_credits{
+		width: 50%;
+	}
+	
+	.avl_credit_price {
+		width: 35%;
+	}
+	
+	.wid_error97 {
+		min-width: calc(96% + 4px) !important;
+		width: 96% !important;
+	}
+	
+	.chkout_guest_profile_promoarea .wid_error97, .chkout_guest_profile_nwarea .wid_error97	{
+		width: 100% !important;
+		box-sizing: border-box;
+	}
+	
+	.mobile_beak{
+		display: block;
+		clear: both;
+	}
+	
+	.error_msg_display2{
+		width: 258px;
+	}
+	
+	.mob_block{
+		display:block;
+		text-transform:capitalize;
+	}
+	
+	.in_lineBlock > input[type="button"]{
+		margin-left: -10px;
+	}
+	
+	.totalpay_txt_head{
+		font-size: 15px;
+		width: 74%;
+		padding: 0 0% 0.2em 2%;
+	}
+	
+	label.mrgn_left50{
+		margin-left: 15px;
+	}
+	.slide_down_success_mainbg,.slide_down_guidance_mainbg,.slide_down_error_mainbg{
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		position: fixed;
+		right: 0;
+	}
+	
+	/* .general_submit_close {
+		background: url(../images/cancel_submit.png) no-repeat center;
+	}
+	
+	.general_error_close {
+		background: url(../images/cancel_error.png) no-repeat center;
+	}
+	
+	.general_success_close {
+		background: url(../images/cancel_success.png) no-repeat center;
+	} */
+	
+	.slide_down_rght_sec {		
+		padding: 1% !important;
+	}
+	
+	.defpayattalert_incomp_txt .delete_icon {
+		margin: 0 36px 0 5px; 
+	}
+	
+	.submit_pmt_alertbox{
+		margin-top: 5px;
+	}
+	
+	.desk_wid_input{
+		min-width: 98%;
+		width: 98% !important;
+	}
+	
+	.desk_wid_input_guest {
+		min-width: 98%;
+		width: 98% !important;
+	}
+	
+	.search_button_add{
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		float: left;
+		min-width: 0 !important;
+		width: 24%;
+	}
+	
+	.srch_txt_rht{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.srch_txt_lft{
+		float: left;
+		width: 42%;
+		text-align: left;
+	}
+	
+	.search_lnk{
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	.mrgn_top_neg8{
+		margin-top: 0;
+	}
+	
+	.mob_tab_inv{
+		display: none !important;
+	}
+	
+	.desk_300{
+		width: 100%;
+	}
+	
+	.mng_card_area{
+		max-width: 100%;
+	}
+	
+	.mob_mrgn_rght0{
+		margin-right: 0 !important
+	}
+	
+	.mng_gift{
+		max-width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	.sdbar_text{
+		max-width: 185px;
+	}
+	
+	.mob_max_100{
+		max-width: 100%;
+	}
+	
+	#manage_card_area .general_error, #manage_card_area .general_submit, #manage_card_area .general_success{
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	#manage_card_area .submit_text{
+		padding: 10px 5px;
+	}
+	
+	.vesta_manage_card15{
+		width: 15%;
+	}
+	
+	.master_card_icon, .visa_card_icon, .discover_card_icon{
+		background-position:left bottom;
+	}
+	
+	.card_infobox .fa-check{
+		margin-top: 2px;
+	}
+	
+	.card_infobox .visa_card_icon {
+		background: url(../images/visacard_icon.png) no-repeat left center;
+	}
+	
+	.extraBtnArea{
+		display: none;
+	}
+	
+	.card_info{
+		margin-left: 16%;
+		padding: 5px 0;
+	}
+	
+	.twitter-follow-button{
+		vertical-align: top;
+	}
+	
+	.card_not_eligible{
+		margin-left: 53px !important;
+		padding: 0 !important;
+	}
+	
+	.add_profile_mob{
+		margin: 0 !important;
+	}
+	
+	.add_card_text_mob{
+		padding: 10px 0;
+	}
+	
+	.adContainer{
+		width: 100%
+	}	
+	
+	.mob_no_add_card{
+		display: none;
+	}
+	
+	.mob_add_card{
+		display: block;
+	}
+	
+	.mrgn_max_card{
+		width: 100%;
+	}
+	
+	.rght_msg_close{
+		right: 10px !important;
+	}
+	
+	.edit_profile_section_lft .add_pmt_method_cardarea input[type="text"], .edit_profile_section_lft .add_pmt_method_cardarea input[type="tel"], .edit_profile_section_lft .add_pmt_method_cardarea input[type="password"], .edit_profile_section_lft .add_pmt_method_cardarea select {
+		width: 100%;
+	}
+	
+	#managePaymentCards .desk_wid_input{
+		min-width: 100%;
+	}
+	
+	.card_expiry {
+		float: left !important;
+		position: relative;
+		left: 0;
+	}
+	
+	.defpay_bg_heading_content{
+		position: absolute;
+		-webkit-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		margin-top: 0;
+	}
+	
+	.defpay_bg_heading ul{
+		top: 30px;
+	}
+	
+	.card_info_mrgn {
+		margin-left: 42px !important;	
+	}	
+	
+	.receipt_service_link{
+		top: 20px;
+		width: 84%;
+	}
+	
+	.noCard{
+	padding: 0px;	
+	}
+	
+	.vesta_manage_cardrow{
+		width: 103%;
+	}
+}
+
+/* ipad see more bill */
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+	
+	.defpay_bg_heading_content{
+		position: absolute;
+		-webkit-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		margin-top: 0;
+	}
+	
+	.defpay_bg_heading ul{
+		top: 30px;
+	}
+	
+	
+	.tbl_pmt_hist_bg {
+		background: #cccccc;
+		min-height: 50px;
+		padding: 0.2em 0;
+		float: left;
+		width: 100%;
+		margin: 2.5px 0 2.5px;
+	}
+	.pmt_hist_status {
+		width: 15%;
+		float: left;
+	}
+	.pmt_hist_service_prov {
+		width: 64%;
+		float: left;
+	}
+	
+	.pmt_hist_nm_heading {
+		font-family: verdana;
+		font-size: 16px;
+		font-weight: bold;
+		color: #052030;
+		text-align: left;
+		line-height: 20px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 78%;
+		float: left;
+	}
+	
+	.pmt_hist_dttxt {
+		width: 100%;
+		font-family: verdana;
+		font-size: 13px;
+		color: #052030;
+		text-align: left;
+		font-style: normal;
+		float: left;
+		line-height: 18px;
+	}
+	
+	.pmt_hist_amount_area {
+		font-family: verdana;
+		color: #052030;
+		font-size: 14px;
+		font-weight: bold;
+		width: 20%;
+		float: left;
+		text-align: right;
+		margin-top: 2px;
+	}
+	
+	.schedule_pend_icon_big {
+		color: #052030;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	
+	.pending_icon_big {
+		color: #ffe100;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	
+	.delivered_icon_big {
+		color: #06d01e;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	.failed_icon_big {
+		color: #ff0000;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	.canceled_icon_big {
+		color: #666;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+	#resultSetArea {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 10px 0 0 !important;
+	}
+	
+	.tbl_srch_bg {
+		width: 94%;
+		float: left;
+		background: #cccccc;
+		border-bottom: solid 4px #ffffff;
+		padding: 10px 3%;
+	}
+	
+	.tbl_srch_item_lft {
+		float: left;
+		width: 100%;
+		text-align: left;
+		font-style: normal;
+		color: #000;
+		line-height: 20px;
+	}
+	.tbl_srch_item_rght {
+		float: right;
+		width: 1%;
+		display: none;
+	}
+	
+	.mini_arrow {
+		background: url(../images/arrow_mob_icon.png) no-repeat;
+		width: 8px;
+		height: 14px;
+		margin-top: 0.6em;
+		float: right;
+	}
+	
+	.pad_txt_inv{
+		display: none;
+	}
+	
+	/* .search_biller_deftxt {
+		margin: 0 !important;
+		padding: 0 8px !important;
+		color: #999999;
+	} */
+	
+	.srch_provider_mrgn {
+		font-size: 16px;
+		font-weight: bold;
+		color: #052030;
+		text-align: left;
+		line-height: 20px;
+		margin: 10px 2% !important;
+	}
+	
+	/* .search_biller_inputbox {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 15px 10px !important;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	} */
+	
+	.srch_provider_reset {
+		top: 0.5em !important;
+		right: 2% !important;
+		left: auto !important;
+	}
+	
+	 .search_biller_area, .search_biller_area1 {
+		padding: 0 2% !important;
+	} 
+	
+	.srchBillerTab {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	
+	 .mySearchLoading {
+		right: 36% !important;
+		left: auto !important;
+	} 
+	
+	.search_biller_area {
+		margin-left: 0 !important;
+	}
+	
+	.search_biller_area1 {
+		width: 323px;
+		margin-right: 0 !important;
+		box-sizing: inherit !important;
+		-moz-box-sizing: inherit !important;
+		-webkit-box-sizing: inherit !important;
+	}
+	
+	.rght_msg_close{
+		right: 10px !important;
+	}
+	
+	.add_pmt_method_cardarea .desk_wid_input{
+		width: 100% !important;
+		padding: 10px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	#managePaymentCards .desk_wid_input{
+		min-width: 100%;
+	}
+	
+	/* manage card Start */
+	.mng_card_area {
+		max-width: 100%;
+	}
+	
+	.mng_gift {
+		max-width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	.mng_card_pdng {
+		width: 100% !important;
+	}
+	
+	#manage_card_area .edit_profile_section_rght{
+		width: 100% !important;
+	}
+	#manage_card_area .edit_profile_section_lft {
+		width: 96% !important;
+		margin: 0 2%;
+		padding: 0 !important;
+	}
+	
+	#manage_card_area .general_error, #manage_card_area .general_submit, #manage_card_area .general_success {
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	
+	.add_pmt_method_cardarea input[type="text"], .add_pmt_method_cardarea input[type="tel"], .add_pmt_method_cardarea input[type="password"], .add_pmt_method_cardarea select{
+		width: 100%;
+	}
+	
+	.adContainer{
+		width: 100%
+	}	
+	
+	.mob_no_add_card{
+		display: none;
+	}
+	
+	.mob_add_card{
+		display: block;
+	}
+	
+	.mrgn_max_card{
+		width: 96%;
+		padding: 0 2%;
+	}
+	
+	.edit_profile_section_lft .add_pmt_method_cardarea input[type="text"], .edit_profile_section_lft .add_pmt_method_cardarea input[type="tel"], .edit_profile_section_lft .add_pmt_method_cardarea input[type="password"], .edit_profile_section_lft .add_pmt_method_cardarea select {
+		width: 100%;
+	}
+	
+	/* manage card End */
+	
+}
+
+/* Tablet Media Queries */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		overflow: hidden;
+	}
+	.container {
+		width: 100%;
+	}
+	.account_infoarea {
+		display: none !important;
+	}
+	.wrapper_area {
+		width: 100%;		
+		z-index: 2;
+		background: #fff;
+	}
+	.head-sec {
+		width: 100%;
+	}
+	.onclick_block_area {
+		clear: both;
+	}
+	
+	.default_paytxt_heading {
+		width: 74.5%;
+	}
+	
+	.mob_block{
+		display:block;
+		text-transform:capitalize;
+	}
+	
+	.in_lineBlock > input[type="button"]{
+		margin-left: -10px;
+	}
+	
+	.checkout_btn_modf {
+		min-width: 100%;
+		margin: 0 auto;
+	}
+	
+	.edit_profile_acc_container {
+		margin: 0.5em 1% !important;
+	}
+	
+	.edit_profile_section_lft, .edit_profile_section_rght {
+		width: 48% !important;
+		padding: 1% !important;
+	}
+	
+	.pdng_top15 {
+		padding: 15px 0 0;
+		margin: 0 1%;
+	}	
+	
+	.add_bill_btnmrgn_area {
+		width: 100%;
+		margin: 1% 0;
+	}
+	
+	.add_edit_left_section {
+		width: 96%;
+		margin: 2%;
+	}
+	
+	.signup_container_area, .signup_container_area1 {
+		width: 98%;
+		margin: 1%;
+	}
+	
+	.mob_error_msg {
+		width: 42%;
+	}
+
+	
+	.mySearchLoading {
+		left: 228px;
+	}
+	
+	.srchBillerTab{
+		width: 100%;
+		margin:0; 
+	}
+	
+	.search_biller_area{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-left: 1%;
+	}
+	
+	.search_biller_area1{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-right: 1%;
+	}
+	
+	.srch_provider_mrgn {
+		margin: 0 1%;
+	}
+	
+	#resultSetArea {
+		width: 100%;
+	}
+	
+	.disp_show_hide {
+		display: inline-block;
+	}
+	
+	.disp_none {
+		display: none !important;
+	}
+
+	.blockImp{
+		display: block !important;
+	}
+	
+	#accountInfoId{
+		width: 267px;	
+		z-index: 1;
+	}
+	
+	.mrgn-1 {
+		margin: 0 1% !important;
+	}
+	
+	.account_img_area{
+		width: 15%;
+		float: left;
+		padding: 8px 0 10px 1%;
+		font-size: 9px;
+		display: none;
+	}
+	
+	.acc_heading_txt {
+		color: #ffffff;
+		margin: 6% 0% 6% 4%;
+		width: 38%;
+	}
+	
+	.account_box_btn {
+		min-width: 92px;
+		height: 32px;
+		margin: 10px;
+	}
+	
+	.avl_credits{
+		width: 50%;
+	}
+	
+	.avl_credit_price {
+		width: 35%;
+	}
+	
+	.mob_error_msg {
+		width: 305px;
+	}
+	
+	.guest_chkout_wid{
+		margin-left: 2%;
+	}
+	
+	.tab_mrgn_top{
+		margin-top:10px !important;
+	}
+	
+	#activityIcon
+	{
+		display: block !important;
+		line-height: 40px;
+	}
+	
+	.error_msg_display2{
+		width: 411px;
+	}
+	
+	.slide_down_error_mainbg,.slide_down_success_mainbg {
+		width: 100% !important;
+		border: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		position: fixed;
+		right: 0;
+	}	
+	
+	.mrgn_top_neg8{
+		/* margin-top: 0; */
+	}
+	
+	.mob_tab_inv{
+		display: none !important;
+	}
+	
+	.sdbar_text{
+		max-width: 185px;
+	}
+	
+	.extraBtnArea{
+		display: none;
+	}
+}
+
+
+/* Below CSS classes are for Iphone  */
+@media only screen and (-webkit-min-device-pixel-ratio : 2) , only
+	screen and (min-device-pixel-ratio : 2) {
+	.login_submit_btn {
+		height: 46px !important;
+		padding: 0 !important;
+	}
+	.lock_icon {
+		top: 8px !important;
+	}	
+	
+	.continue_guest_btn{
+		max-width: 90% !important;
+		min-width: 90% !important;
+		text-align: center;
+		padding: 0 !important;
+	}
+	
+	.popup{
+		position: absolute !important;
+	}
+	
+	.helpNotificationFont{
+		font-size: 16px !important;
+	}
+	
+	.general_sel_pay_link{
+		top: 0px !important;
+	}
+	
+}
+
+@media only screen and (max-width:319px) {
+	body{
+		min-width: 240px;
+	}
+	.add-payment-section .styled-select {
+		width: 95.4% !important;
+	}
+	.add-payment-section .add_pmt_method_cardarea input[type="text"] {
+		width: 92.9%;
+	}
+	.add-payment-section .add_pmt_method_cardarea select.select_wd160,.add-payment-section .add_pmt_method_cardarea select.select_wd88
+		{
+		width: 50% !important;
+	}
+	.find_bill_bg .mrgn_left10 {
+		margin-left: 2px !important;
+	}
+	.find_bill_bg .mrgn_rght10 {
+		margin-right: 2px !important;
+	}
+	.find_bill_bg h1 {
+		font-size: 13px;
+	}
+	.mob_btn_display {
+		min-width: 47px;
+	}
+	.row_box .default_paytxt_heading {
+		width: 100% !important; 
+		padding: 0.75em 0% 0.25em;
+		float: left !important;
+	}
+	.row_box .defpay_bg_heading {
+		float: left !important;
+		width: 100% !important; 
+	}
+	.defpay_bg_heading ul {
+		right: 0;
+		left: 0;
+	}
+	.defpay_bg_heading ul li {
+		width: 200px;
+	}
+	
+	.submit_text{
+		width: 63%;
+	}
+	.general_submit_close, .general_error_close, .general_success_close {
+		width: 24%;
+	}
+	.biller_amount {
+		text-indent: 4px;
+	}
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	.add-payment-section .back_btn,.add-payment-section .sv_submit_inactive_btn
+		{
+		width: 100%;
+	}
+	.add-payment-section .add_pmt_method_cardarea input[type="text"] {
+		width: 95%;
+	}
+	.add-payment-section .add_pmt_method_cardarea select.select_wd160,.add-payment-section .add_pmt_method_cardarea select.select_wd88
+		{
+		width: 50% !important;
+	}
+	
+	.add_pmt_method_cardarea select {
+		width: 99% !important;
+	}
+    .add_pmt_method_cardarea select.mob_select_wd148 {
+        width: 145px !important;
+    }
+	
+	.add-payment-section .cvv_input {
+		width: 83% !important;
+	}
+	.add-payment-section .additional_info_box {
+		margin: 2% 2% 2% 1.8% !important;
+	}
+	.find_bill_bg h1 {
+		font-size: 15px;
+	}
+	.default_paytxt_heading {
+		width: 52%;
+	}
+	
+	.defpay_bg_heading ul li{width:235px;}
+	
+	.submit_text{
+		width: 80%;
+	}
+	
+	.general_submit .fa-times, .general_error .fa-times, .general_success .fa-times {
+		width: 13%;
+		text-align: center;
+	}
+	.general_submit_close, .general_error_close, .general_success_close {
+		width: 13%;
+	}
+	.pay_bill_inp {
+		width: 45px;
+	}
+	.default_paytxt_heading {
+		width: 55% !important;
+	}
+	.defpay_bg_heading {
+	width: 44% !important;
+	}
+	.pay_bill_dropdown {
+		width: 20px;
+		padding: 0;		
+	}
+	
+	.defpay_info_attalertcontainer {
+		width: 98.6%;
+	}
+	
+	.login_forgot_txt a {
+		text-decoration: underline;
+	}
+	
+	.save_bill_btn, .back_search_btn{
+		min-width: 100% !important;
+		margin: 2.5px 0 !important;
+	}
+	
+	.cred_popup{
+		min-width: 80%;
+	}
+	
+	.summaryText{
+	width: 91%;
+	}	
+	
+	.mob_blk{
+		display: block;
+	}
+	
+	.detailArrowup{
+	margin-left: 0px;
+	}
+	
+	.defpayattalert_txt_bottom{
+		width: 70%;
+	}
+	
+	.defpayattalert_icons{
+		width: 30%;
+	}
+	.defpayattalert_incomp_txt .delete_icon {
+		margin: 0 10px 0 5px;
+	}
+	
+	.debit_vesta_btnarea .vesta_card_sv_btn{
+		margin: 0 1%;
+		min-width: 98%;
+	}
+	
+	.srch_txt_rht{
+		width: 100%;
+        text-align: center;
+	}
+	
+	.srch_txt_lft{
+		width: 32%;
+	}
+	
+	.search_biller_deftxt{
+		padding-left: 0px;
+	}
+	
+	.vesta_manage_card80 {
+		width: 68%;
+	}
+	
+	.vesta_manage_card15 {
+		width: 27%;
+	}
+	
+	.biller_name {
+		width: 64%;
+		float: left;
+		margin-left: 10px;
+	}
+	
+	.card_info{
+		margin-left: 28%;
+	}
+	
+	.helpNotificationFont{
+		font-size: 16px !important;
+	}
+	
+	.receipt_service_link {
+		width: 74%;
+	}
+	
+	.receipt_service_link a{
+		padding: 0px;
+	}
+	
+	.edit_card_file {
+		margin-right: 6px;
+	}
+	
+	a.general_sel_pay_link{
+		float: left;
+		top: 0px;
+	}
+	
+	a.general_sel_pay_link span{
+		clear: both;
+		float: left;
+	}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1365px) {
+	.my_account_area_blw {
+		/* max-height:calc(100% - (148.5px)); */ /* 100% - my_account_area_abv(height) - see more button(height) - credit(height) */
+		height: auto;
+	}
+}
+
+@media (min-width:1366px)  {
+	 .my_account_area_blw{
+	/*max-height:calc(100% - (150px)); */  /* 100% - my_account_area_abv(height) - see more button(height) - credit(height) */
+	 	height: auto;
+	 }
+	 
+	 .acc_heading_txt {
+		color: #ffffff;
+		margin: 6.5% 0% 6% -2%;
+		width: 38%;
+	}
+	
+	.account_box_btn {
+		min-width: 92px;
+		height: 32px;
+		margin: 10px;
+	}
+	
+}
+@media (orientation:landscape) {
+    html.ipad.ios7 > body {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 672px !important;
+    }
+}

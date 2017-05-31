@@ -1,0 +1,35 @@
+/* 
+ a:link {
+	color: #ffffff;
+}
+ a:visited {
+	color: #ffffff;
+}
+a:hover {
+	color: #ff0000;
+}
+body {
+	color:#ff0000; font-family:verdana;
+}
+.container {
+ background:#cccccc;
+}
+h1 {
+ color:#ff0000;
+}
+h2 {
+	color:#ff0000;
+} */
+
+
+
+/* Mobile 	
+@media only screen and (max-width:480px) {
+
+	body{font-family:verdana !important; color:#ff0000 !important;}
+	h1{ color:#fff000 !important;}
+	h2{ color:#fff000 !important;}
+	.container{background:#ff0000 !important;}
+		
+}*/
+	

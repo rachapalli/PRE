@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="build-p4-project" basedir="../../../">
+    <property environment="env"/>
+
+    <property name="catalina.shutdown.script" value="bin/shutdown.sh"/>
+    <property name="catalina.startup.script" value="bin/startup.sh"/>
+
+    <target name="init">
+        <echo message="********** WORKSPACE=${WORKSPACE}************"/>
+        <echo message="********** basedir=${basedir}************"/>
+        <echo message="********** Label=${label}************"/>
+        <echo message="********** project.name=${project.name}************"/>
+        <echo message="********** test.CATALINA_HOME=${test.CATALINA_HOME}************"/>
+        <echo message="********** test.CATALINA_PORT=${test.CATALINA_PORT}************"/>
+        <echo message="********** java=${java}************"/>
+        <echo message="********** M2_HOME=${M2_HOME}************"/>
+    </target>
+
+    <target name="stop_tomcat" description="calls the tomcat shutdown script">
+        <exec dir="${test.CATALINA_HOME}" executable="${catalina.shutdown.script}" resolveexecutable="true"/>
+        <echo message="tomcat shutting down...(sleep max 45 sec.) ${test.CATALINA_HOME}:${test.CATALINA_PORT}"/>
+        <waitfor maxwait="45" maxwaitunit="second" checkevery="1000" timeoutproperty="socketStillOpen">
+            <not>
+                <socket server="localhost" port="${test.CATALINA_PORT}"/>
+            </not>
+        </waitfor>
+        <fail if="socketStillOpen"
+              message="tomcat failed to shutdown at http://localhost:${test.CATALINA_PORT}/opp/"/>
+    </target>
+
+    <target name="start_tomcat" description="calls the tomcat startup script">
+        <exec dir="${test.CATALINA_HOME}" executable="${catalina.startup.script}" resolveexecutable="true"
+              outputproperty="startUp.output"/>
+        <echo message="tomcat starting up...(sleep max 90 sec.) ${test.CATALINA_HOME}:${test.CATALINA_PORT}"/>
+        <echo message="${startUp.output}"/>
+
+        <echo message="testing for socket success-> localhost:${test.CATALINA_PORT}"/>
+        <waitfor maxwait="90" maxwaitunit="second" checkevery="1000" timeoutproperty="socketFailed">
+            <and>
+                <socket server="127.0.0.1" port="${test.CATALINA_PORT}"/>
+            </and>
+        </waitfor>
+        <fail if="socketFailed"
+              message="tomcat failed to start at localhost:${test.CATALINA_PORT}"/>
+
+        <echo message="testing for URL success-> ${test.url}"/>
+        <get src="${test.url}" dest="text.html" retries="2" maxtime="300"/>
+
+    </target>
+
+
+    <target name="replace_war_in_tomcat">
+        <antcall target="deploy_war">
+            <param name="warname" value="opp"/>
+        </antcall>
+
+
+        <copy todir="${test.CATALINA_HOME}/lib">
+            <fileset dir="${artifactsDir}/non-packaged-resources">
+                <include name="**/opp*"/>
+            </fileset>
+        </copy>
+        <echo message="***** DEPLOYING CONTENT TO TEST TOMCAT****** Done."/>
+    </target>
+
+
+    <target name="deploy_war">
+        <echo message="***deploying war: ${warname}"/>
+        <delete dir="${test.CATALINA_HOME}/webapps/${warname}"/>
+        <delete file="${test.CATALINA_HOME}/webapps/${warname}.war"/>
+        <copy file="${artifactsDir}/${warname}.war" todir="${test.CATALINA_HOME}/webapps/"/>
+        <echo message="***deploying war: ${warname}... DONE"/>
+    </target>
+
+    <target name="build">
+        <echo message="*** calling mvn build."/>
+        <echo message="M2_HOME=${M2_HOME}"/>
+        <echo message="p4.clientDir=${p4.clientDir}"/>
+        <echo message="JAVA_HOME=${java}"/>
+
+        <exec executable="${M2_HOME}/bin/mvn" dir="${basedir}/${p4.clientDir}"
+              failifexecutionfails="true" failonerror="true" outputproperty="output">
+            <arg value="-Dmaven.test.skip=true"/>
+            <arg value="-DrbScriptBuild.skip=${skipRBScriptBuild}"/>
+            <arg value="-DrbScriptBuild.lastReleaseDate=${lastReleaseDate}"/>
+            <arg value="clean"/>
+            <arg value="install"/>
+            <env key="JAVA_HOME" value="${java}"/>
+
+        </exec>
+
+        <echo message="MAVEN OUTPUT = ${output}"/>
+
+    </target>
+
+
+    <target name="deploy_to_dev_tomcat" depends="init, build, stop_tomcat, replace_war_in_tomcat, start_tomcat">
+
+    </target>
+
+</project>
